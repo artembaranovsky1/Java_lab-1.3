@@ -61,7 +61,7 @@ public class StudentManagement {
                 return new Student(name, number, course, grade);
             } catch (Exception e) {
                 System.out.println("Помилка створення об'єкта. Спробуйте ще раз.");
-                scanner.nextLine(); // Очищення буфера
+                scanner.nextLine();
             }
         }
     }
@@ -75,7 +75,7 @@ public class StudentManagement {
                 return val;
             } catch (InputMismatchException e) {
                 System.out.println("Помилка: введіть ціле число.");
-                scanner.next(); // Очищення некоректного вводу
+                scanner.next();
             } catch (IllegalArgumentException e) {
                 System.out.println("Помилка: " + e.getMessage());
             }
